@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       body: JSON.stringify({
         "name": nameEl.value,
-        "image": imageEl.value,
+        "image_url": imageEl.value,
       })
     }).then(resp => { return resp.json()
     }).then(user => {
@@ -65,39 +65,59 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 })
 
-  function loadUsers() {
-    fetch("http://localhost:3000/users")
-    .then(resp => resp.json())
-    .then(allUsers => {
-      allUsers.forEach(user => addCard(user))
-      //allUsers.included.forEach(shoe => listShoe(shoe))
+function loadUsers() {
+  fetch("http://localhost:3000/users")
+  .then(resp => resp.json())
+  .then(allUsers => {
+    allUsers.forEach(user => addCard(user))
+    //allUsers.included.forEach(shoe => listShoe(shoe))
 
-    })
-  }
-
-  function addCard(user) {
-    const card = document.createElement('div');
-    const shoeList = document.createElement('ul');
-    const addShoeButton = document.createElement('button');
-    const cardContainer = document.querySelector("#shoe-collection")
-
-    card.setAttribute("data-id", user.id)
-    shoeList.id = `shoe-list-${user.id}`
-    shoeList.className = "shoe-list"
-    addShoeButton.id = 'add-button'
-    addShoeButton.innerText = 'Add Shoe'
-    card.classList.add("card")
-
-    userName = document.createElement('h1')
-    userName.innerHTML = user.name
-    userImage = document.createElement('img')
-    userImage.src = user.image_url
-
-    cardContainer.prepend(card)
-    card.append(userName)
-    card.append(userImage)
-    card.append(addShoeButton)
-    card.append(shoeList)
-
+  })
 }
 
+function addCard(user) {
+  const card = document.createElement('div');
+  const shoeList = document.createElement('ul');
+  const addShoeButton = document.createElement('button');
+  const cardContainer = document.querySelector("#shoe-collection")
+  const deleteUserBtn = document.createElement('button')
+
+  card.id = `usercard-${user.id}`
+  shoeList.id = `shoe-list-${user.id}`
+  shoeList.className = "shoe-list"
+  addShoeButton.id = 'add-button'
+  addShoeButton.innerText = 'Add Shoe'
+  deleteUserBtn.id = `${user.id}`
+  deleteUserBtn.innerText = "Delete User"
+  card.classList.add("card")
+
+  userName = document.createElement('h1')
+  userName.innerHTML = user.name
+  userImage = document.createElement('img')
+  userImage.src = user.image_url
+
+  cardContainer.prepend(card)
+  card.append(userName)
+  card.append(userImage)
+  card.append(shoeList)
+  card.append(addShoeButton)
+  card.append(deleteUserBtn)
+
+  deleteUserBtn.addEventListener("click", () => {
+    userId = deleteUserBtn.id
+    deleteUser(userId)
+  })
+}
+
+function deleteUser(userId) {
+  let cardBeingDeleted = document.querySelector(`#usercard-${userId}`)
+  fetch(`http://localhost:3000/user/${userId}`, {
+    method: "DELETE",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    }
+  }).then(resp => { return resp.json()
+  }).then(resp => { cardBeingDeleted.remove() })
+
+}

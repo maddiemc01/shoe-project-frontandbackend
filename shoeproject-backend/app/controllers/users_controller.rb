@@ -1,3 +1,5 @@
+
+require 'pry'
 class UsersController < ApplicationController
   def index
     users = User.all
@@ -16,6 +18,11 @@ class UsersController < ApplicationController
   def show
     #show the shoes of a specific user
   end
+
+  def destroy
+
+  end
+
 private
   def user_params
     params.require(:user).permit(:name, :image_url)
