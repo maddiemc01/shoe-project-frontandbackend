@@ -1,5 +1,7 @@
 let createShoe = false;
 let addUser = false;
+let showCards = false;
+
 document.addEventListener("DOMContentLoaded", () => {
   const addBtn = document.querySelector("#new-shoe-btn"); // botton that shows the form for adding new shoe
   const shoeUserSection = document.querySelector("#new-or-old-user"); // class container has the form for add new shoe
@@ -23,6 +25,25 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   })
 
+  const previousUserBtn = document.querySelector("#previous-user")
+  const cardContainer = document.querySelector("#shoe-collection")
+  cardContainer.innerHTML =
+  previousUserBtn.addEventListener("click", () => {
+    showCards = !showCards
+    if (showCards) {
+      cardContainer.style.display = "block"
+    } else {
+      cardContainer.style.display = "none"
+    }
+  })
+
+  const submitNewUserBtn = document.querySelector("#submit-new-user")
+  submitNewUserBtn.addEventListener("submit", () => {
+    fetch("localhost:3000/user")
+
+    cardContainer.style.display = "block"
+    cardContainer.innerHTML = "hello"
+  })
 
 
 
