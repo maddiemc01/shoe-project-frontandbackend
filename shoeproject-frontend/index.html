@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Shoe Maker</title>
-    <script type="text/javascript" src="src/index.js"></script>
+    <script type="application/javascript" src="./src/index.js" charset="UTF-8"></script>></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -14,32 +14,33 @@
       />
     </div>
 
-    <div class="container">
+    <div id="new-user-form-container">
       <form class="add-shoe-form">
-        <h3>Create a Shoe!</h3>
-        <!-- add shoe options (heal, heaight)-->
+        <h3 id= "create-header">Welcome New User!
+          <br> Creating a user card will save all the shoes that you make:
+        </h3>
         <input
           type="text"
           name="size"
           value=""
-          placeholder="Enter your shoe size"
+          placeholder="Enter your name here"
           class="input-text"
           id= "name-input"
         />
         <br />
-        <!-- <input
+        <input
           type="text"
           name="image"
           value=""
-          placeholder="Enter a toy's image URL..."
+          placeholder="Enter a profile image URL..."
           class="input-text"
           id= "image-input"
-        /> -->
+        />
         <br />
         <input
           type="submit"
           name="submit"
-          value="Create New Shoe"
+          value="Create New User Card"
           class="submit"
         />
       </form>
@@ -51,7 +52,18 @@
       <br>
       <button id="new-shoe-btn"> Bippity-boppity-boo, create a new shoe!</button>
     </p>
-
-    <div id="shoe-collection"></div>
+    <div id="new-or-old-user">
+    <p style="text-align:center">
+      <span id="shoe-card?">
+      Before we get started, have you already made a shoe card?
+      </span>
+      <br>
+      <button id="new-user"> I'm new, I need to create a shoe card </button>
+      <button id="previous-user"> I've already created a shoe card</button>
+    </p>
+    </div>
+    <div id="shoe-collection">
+      [Shoe cards here]
+    </div>
   </body>
 </html>
