@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const newUserBtn = document.querySelector("#new-user")
   const newUserContainer = document.querySelector("#new-user-form-container")
   newUserBtn.addEventListener("click", () => {
+    cardContainer.style.display = "none"
     addUser = !addUser
     if (addUser) {
       newUserContainer.style.display = "block"
@@ -27,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 
   document.querySelector(".add-user-form").addEventListener("submit", (submitevent) => {
+    newUserContainer.style.display = "none"
     submitevent.preventDefault()
     const nameEl = document.querySelector("#name-input") //added id to index.html
     const imageEl = document.querySelector("#image-input") //added id to index.html
@@ -54,6 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const cardContainer = document.querySelector("#shoe-collection")
   cardContainer.innerHTML = ""
   previousUserBtn.addEventListener("click", () => {
+    newUserContainer.style.display = "none"
     showCards = !showCards
     if (showCards) {
       cardContainer.style.display = "block"
@@ -111,7 +114,7 @@ function addCard(user) {
 
 function deleteUser(userId) {
   let cardBeingDeleted = document.querySelector(`#usercard-${userId}`)
-  fetch(`http://localhost:3000/user/${userId}`, {
+  fetch(`http://localhost:3000/users/${userId}`, {
     method: "DELETE",
     headers: {
       "Content-Type": "application/json",

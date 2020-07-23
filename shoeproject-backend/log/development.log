@@ -2094,3 +2094,1473 @@ puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
 puma (4.3.5) lib/puma/server.rb:472:in `process_client'
 puma (4.3.5) lib/puma/server.rb:328:in `block in run'
 puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started DELETE "/user/22" for ::1 at 2020-07-23 15:04:23 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/user/22"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started DELETE "/user/15" for ::1 at 2020-07-23 15:04:29 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/user/15"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started DELETE "/user/14" for ::1 at 2020-07-23 15:04:31 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/user/14"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2020-07-23 15:04:33 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 5696)
+
+
+Started GET "/users" for ::1 at 2020-07-23 15:04:40 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 2670)
+
+
+Started DELETE "/user/27" for ::1 at 2020-07-23 15:04:41 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/user/27"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started DELETE "/user/26" for ::1 at 2020-07-23 15:04:42 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/user/26"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started DELETE "/user/25" for ::1 at 2020-07-23 15:04:43 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/user/25"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started DELETE "/user/24" for ::1 at 2020-07-23 15:04:44 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/user/24"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started DELETE "/user/23" for ::1 at 2020-07-23 15:04:45 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/user/23"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2020-07-23 15:07:26 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 20ms (Views: 0.1ms | ActiveRecord: 9.8ms | Allocations: 5833)
+
+
+Started DELETE "/user/27" for ::1 at 2020-07-23 15:07:27 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/user/27"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started DELETE "/user/26" for ::1 at 2020-07-23 15:07:28 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/user/26"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started DELETE "/user/25" for ::1 at 2020-07-23 15:07:29 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/user/25"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started DELETE "/user/24" for ::1 at 2020-07-23 15:07:29 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/user/24"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started DELETE "/user/23" for ::1 at 2020-07-23 15:07:30 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/user/23"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started DELETE "/user/22" for ::1 at 2020-07-23 15:07:30 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/user/22"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2020-07-23 15:07:33 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 2669)
+
+
+Started DELETE "/user/26" for ::1 at 2020-07-23 15:07:47 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/user/26"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started DELETE "/user/25" for ::1 at 2020-07-23 15:07:56 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/user/25"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started DELETE "/user/24" for ::1 at 2020-07-23 15:07:58 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/user/24"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started DELETE "/user/23" for ::1 at 2020-07-23 15:07:58 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/user/23"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2020-07-23 15:08:00 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 5.4ms | Allocations: 5807)
+
+
+Started GET "/users" for ::1 at 2020-07-23 15:08:04 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 2670)
+
+
+Started DELETE "/user/27" for ::1 at 2020-07-23 15:08:05 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/user/27"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started DELETE "/user/26" for ::1 at 2020-07-23 15:08:06 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/user/26"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2020-07-23 15:08:33 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 2669)
+
+
+Started DELETE "/user/26" for ::1 at 2020-07-23 15:08:37 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/user/26"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2020-07-23 15:09:26 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 2669)
+
+
+Started DELETE "/users/27" for ::1 at 2020-07-23 15:09:28 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"27", "user"=>{}}
+Started DELETE "/users/26" for ::1 at 2020-07-23 15:09:28 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"26", "user"=>{}}
+Started DELETE "/users/26" for ::1 at 2020-07-23 15:09:29 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"26", "user"=>{}}
+Started DELETE "/users/24" for ::1 at 2020-07-23 15:09:31 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"24", "user"=>{}}
+Started GET "/users" for ::1 at 2020-07-23 15:09:57 -0400
+Completed 500 Internal Server Error in 86760ms (ActiveRecord: 0.0ms | Allocations: 11831)
+
+
+  
+NoMethodError (undefined method `find' for nil:NilClass):
+  
+app/controllers/users_controller.rb:24:in `destroy'
+Completed 500 Internal Server Error in 139926ms (ActiveRecord: 0.0ms | Allocations: 123712)
+
+
+  
+NoMethodError (undefined method `find' for nil:NilClass):
+  
+app/controllers/users_controller.rb:24:in `destroy'
+Completed 500 Internal Server Error in 198954ms (ActiveRecord: 0.0ms | Allocations: 158360)
+
+
+  
+NoMethodError (undefined method `find' for nil:NilClass):
+  
+app/controllers/users_controller.rb:24:in `destroy'
+Started GET "/users" for 127.0.0.1 at 2020-07-23 15:13:33 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as */*
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 27ms (Views: 0.2ms | ActiveRecord: 9.0ms | Allocations: 6712)
+
+
+Started DELETE "/users/26" for 127.0.0.1 at 2020-07-23 15:13:36 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"26", "user"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `destroy'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[36mUser Destroy (3.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 26]]
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 5.2ms | Allocations: 3412)
+
+
+Started DELETE "/users/25" for 127.0.0.1 at 2020-07-23 15:13:37 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"25", "user"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[36mUser Destroy (1.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 25]]
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 2.0ms | Allocations: 2596)
+
+
+Started DELETE "/users/24" for 127.0.0.1 at 2020-07-23 15:13:37 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"24", "user"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 24]]
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 2596)
+
+
+Started DELETE "/users/23" for 127.0.0.1 at 2020-07-23 15:13:38 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"23", "user"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 23]]
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 1.4ms | Allocations: 2596)
+
+
+Started DELETE "/users/27" for 127.0.0.1 at 2020-07-23 15:13:40 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"27", "user"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 27]]
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 1.6ms | Allocations: 2579)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 15:13:43 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 2326)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 15:38:31 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 2375)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 15:39:56 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 2325)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 15:40:02 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 2325)
+
+
+Started DELETE "/users/18" for 127.0.0.1 at 2020-07-23 15:40:06 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"18", "user"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[36mUser Destroy (2.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 18]]
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 4.9ms | Allocations: 2608)
+
+
+Started DELETE "/users/20" for 127.0.0.1 at 2020-07-23 15:40:07 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"20", "user"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 20]]
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+Completed 200 OK in 29ms (Views: 0.1ms | ActiveRecord: 1.7ms | Allocations: 2582)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-07-23 15:49:46 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"cindy", "image_url"=>"https://secure.img1-fg.wfcdn.com/im/71703095/compr-r85/2750/27507545/cinderella-life-size-cardboard-cutout.jpg", "user"=>{"name"=>"cindy", "image_url"=>"https://secure.img1-fg.wfcdn.com/im/71703095/compr-r85/2750/27507545/cinderella-life-size-cardboard-cutout.jpg"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:14:in `create'
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "image_url") VALUES ($1, $2) RETURNING "id"[0m  [["name", "cindy"], ["image_url", "https://secure.img1-fg.wfcdn.com/im/71703095/compr-r85/2750/27507545/cinderella-life-size-cardboard-cutout.jpg"]]
+  ↳ app/controllers/users_controller.rb:14:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:14:in `create'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.9ms | Allocations: 2749)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 15:49:59 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 2294)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 15:50:12 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 1.2ms | Allocations: 2266)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 15:50:22 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 2267)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 15:50:30 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (6.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 6.5ms | Allocations: 2266)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-07-23 15:50:36 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"hello", "image_url"=>"gGg", "user"=>{"name"=>"hello", "image_url"=>"gGg"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:14:in `create'
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "image_url") VALUES ($1, $2) RETURNING "id"[0m  [["name", "hello"], ["image_url", "gGg"]]
+  ↳ app/controllers/users_controller.rb:14:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:14:in `create'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 1.4ms | Allocations: 2492)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 15:53:09 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 2343)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 15:55:11 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 2344)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 15:55:36 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 2343)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 15:56:19 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 2343)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 16:04:43 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 2393)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 16:05:01 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 2343)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 16:05:31 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 2343)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 16:05:51 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 2344)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 16:06:27 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 2343)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 16:07:20 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.6ms | Allocations: 2343)
+
+
+Started DELETE "/users/30" for 127.0.0.1 at 2020-07-23 16:07:37 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"30", "user"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `destroy'
+  [1m[35m (16.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[36mUser Destroy (4.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 30]]
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+Completed 200 OK in 30ms (Views: 0.1ms | ActiveRecord: 23.9ms | Allocations: 2615)
+
+
+Started DELETE "/users/21" for 127.0.0.1 at 2020-07-23 16:07:39 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"21", "user"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 21]]
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.9ms | Allocations: 2579)
+
+
+Started DELETE "/users/22" for 127.0.0.1 at 2020-07-23 16:07:40 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"22", "user"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[36mUser Destroy (17.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 22]]
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+Completed 200 OK in 26ms (Views: 0.1ms | ActiveRecord: 18.3ms | Allocations: 2582)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 16:08:56 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 2129)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 16:09:58 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 2128)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 16:10:18 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 2128)
+
+
+Started DELETE "/users/19" for 127.0.0.1 at 2020-07-23 16:11:59 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"19", "user"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 19]]
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[35m (24.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+Completed 200 OK in 41ms (Views: 0.5ms | ActiveRecord: 26.2ms | Allocations: 2579)
+
+
+Started DELETE "/users/28" for 127.0.0.1 at 2020-07-23 16:12:00 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"28", "user"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 28]]
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.3ms | Allocations: 2589)
+
+
+Started DELETE "/users/1" for 127.0.0.1 at 2020-07-23 16:12:06 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"1", "user"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 1.9ms | Allocations: 2600)
+
+
+Started DELETE "/users/2" for 127.0.0.1 at 2020-07-23 16:12:06 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"2", "user"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[36mUser Destroy (20.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+Completed 200 OK in 26ms (Views: 0.1ms | ActiveRecord: 21.4ms | Allocations: 2579)
+
+
+Started DELETE "/users/3" for 127.0.0.1 at 2020-07-23 16:12:07 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"3", "user"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 2.2ms | Allocations: 2579)
+
+
+Started DELETE "/users/4" for 127.0.0.1 at 2020-07-23 16:12:08 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"4", "user"=>{}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 2.1ms | Allocations: 2579)
+
+
+Started DELETE "/users/5" for 127.0.0.1 at 2020-07-23 16:12:08 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"5", "user"=>{}}
+  [1m[36mUser Load (16.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `destroy'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+Completed 200 OK in 23ms (Views: 0.1ms | ActiveRecord: 17.5ms | Allocations: 2580)
+
+
+Started DELETE "/users/6" for 127.0.0.1 at 2020-07-23 16:12:09 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"6", "user"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 2579)
+
+
+Started DELETE "/users/7" for 127.0.0.1 at 2020-07-23 16:12:09 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"7", "user"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `destroy'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 7]]
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.7ms | Allocations: 2579)
+
+
+Started DELETE "/users/8" for 127.0.0.1 at 2020-07-23 16:12:10 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"8", "user"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 8]]
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.3ms | Allocations: 2579)
+
+
+Started DELETE "/users/9" for 127.0.0.1 at 2020-07-23 16:12:10 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"9", "user"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 9]]
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.3ms | Allocations: 2579)
+
+
+Started DELETE "/users/10" for 127.0.0.1 at 2020-07-23 16:12:10 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"10", "user"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[36mUser Destroy (1.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 10]]
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 2.5ms | Allocations: 2579)
+
+
+Started DELETE "/users/11" for 127.0.0.1 at 2020-07-23 16:12:11 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"11", "user"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `destroy'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 11]]
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.6ms | Allocations: 2580)
+
+
+Started DELETE "/users/12" for 127.0.0.1 at 2020-07-23 16:12:11 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"12", "user"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 12]]
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[35m (7.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 8.2ms | Allocations: 2579)
+
+
+Started DELETE "/users/13" for 127.0.0.1 at 2020-07-23 16:12:11 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"13", "user"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `destroy'
+  [1m[35m (16.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[36mUser Destroy (1.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 13]]
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+Completed 200 OK in 25ms (Views: 0.2ms | ActiveRecord: 18.7ms | Allocations: 2579)
+
+
+Started DELETE "/users/14" for 127.0.0.1 at 2020-07-23 16:12:11 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"14", "user"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 14]]
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[35m (18.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+Completed 200 OK in 25ms (Views: 0.1ms | ActiveRecord: 19.5ms | Allocations: 2579)
+
+
+Started DELETE "/users/15" for 127.0.0.1 at 2020-07-23 16:12:12 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"15", "user"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `destroy'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 15]]
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 4.7ms | Allocations: 2579)
+
+
+Started DELETE "/users/16" for 127.0.0.1 at 2020-07-23 16:12:12 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"16", "user"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[36mUser Destroy (0.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 16]]
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 1.6ms | Allocations: 2580)
+
+
+Started DELETE "/users/17" for 127.0.0.1 at 2020-07-23 16:12:12 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"17", "user"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `destroy'
+  [1m[35m (15.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 17]]
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+Completed 200 OK in 20ms (Views: 0.1ms | ActiveRecord: 16.4ms | Allocations: 2580)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-07-23 16:13:25 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"bob sponge", "image_url"=>"https://pbs.twimg.com/profile_images/1210618202457292802/lt9KD2lt.jpg", "user"=>{"name"=>"bob sponge", "image_url"=>"https://pbs.twimg.com/profile_images/1210618202457292802/lt9KD2lt.jpg"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:14:in `create'
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "image_url") VALUES ($1, $2) RETURNING "id"[0m  [["name", "bob sponge"], ["image_url", "https://pbs.twimg.com/profile_images/1210618202457292802/lt9KD2lt.jpg"]]
+  ↳ app/controllers/users_controller.rb:14:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:14:in `create'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.5ms | Allocations: 2498)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 16:13:51 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 863)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 16:14:12 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 863)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 16:22:27 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 912)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 16:22:37 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 863)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-07-23 16:27:49 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"maddie", "image_url"=>"google.com", "user"=>{"name"=>"maddie", "image_url"=>"google.com"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:14:in `create'
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "image_url") VALUES ($1, $2) RETURNING "id"[0m  [["name", "maddie"], ["image_url", "google.com"]]
+  ↳ app/controllers/users_controller.rb:14:in `create'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:14:in `create'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.8ms | Allocations: 2496)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 16:28:13 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 940)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 16:28:19 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 940)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 16:30:38 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 940)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-07-23 16:30:54 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"molly", "image_url"=>"picture", "user"=>{"name"=>"molly", "image_url"=>"picture"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:14:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "image_url") VALUES ($1, $2) RETURNING "id"[0m  [["name", "molly"], ["image_url", "picture"]]
+  ↳ app/controllers/users_controller.rb:14:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:14:in `create'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 2492)
+
+
+Started DELETE "/users/33" for 127.0.0.1 at 2020-07-23 16:31:23 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"33", "user"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[36mUser Destroy (1.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 33]]
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 2.0ms | Allocations: 2617)
+
+
+Started DELETE "/users/32" for 127.0.0.1 at 2020-07-23 16:31:26 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"32", "user"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 32]]
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 1.1ms | Allocations: 2587)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 16:32:53 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 863)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 16:32:59 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 863)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 16:33:11 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 863)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-07-23 16:33:17 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"maddie", "image_url"=>"hello", "user"=>{"name"=>"maddie", "image_url"=>"hello"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:14:in `create'
+  [1m[36mUser Create (3.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "image_url") VALUES ($1, $2) RETURNING "id"[0m  [["name", "maddie"], ["image_url", "hello"]]
+  ↳ app/controllers/users_controller.rb:14:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:14:in `create'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 3.9ms | Allocations: 2494)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 16:33:21 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 940)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 16:33:27 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 940)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 16:33:29 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 940)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 16:33:33 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 941)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 16:34:18 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 940)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-07-23 16:34:59 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"new bee", "image_url"=>"", "user"=>{"name"=>"new bee", "image_url"=>""}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:14:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "image_url") VALUES ($1, $2) RETURNING "id"[0m  [["name", "new bee"], ["image_url", ""]]
+  ↳ app/controllers/users_controller.rb:14:in `create'
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:14:in `create'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 2.5ms | Allocations: 2492)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 16:35:07 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1018)
+
+
+Started DELETE "/users/35" for 127.0.0.1 at 2020-07-23 16:35:14 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"35", "user"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 35]]
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[35m (9.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 10.6ms | Allocations: 2587)
+
+
+Started DELETE "/users/34" for 127.0.0.1 at 2020-07-23 16:35:16 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"34", "user"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `destroy'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 34]]
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:24:in `destroy'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.6ms | Allocations: 2590)
+
+

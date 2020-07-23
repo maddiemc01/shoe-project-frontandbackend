@@ -24,17 +24,26 @@ body {
 
 #shoe-collection {
   margin: 2rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card {
   text-align: center;
   border: grey solid 1px;
   padding: 1rem;
-  width: 15rem;
-  height: 25rem;
+  width: 70%;
+  height: 40rem;
   display: inline-grid;
   margin: 1rem 2rem;
-  box-shadow: 3px 4px #e04b52
+  box-shadow: 3px 4px pink;
+}
+
+img {
+  width: 20rem;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .shoe-avatar {
