@@ -5,6 +5,7 @@
     <title>Shoe Maker</title>
     <script type="application/javascript" src="./src/index.js" charset="UTF-8"></script>></script>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   </head>
   <body>
     <div id="shoe-header">
@@ -46,6 +47,7 @@
         />
       </form>
     </div>
+
     <p style="text-align:center">
       <span id="welcome">
       Welcome Shoe Lover, who needs a fairy godmother when you have yourself!
@@ -53,6 +55,7 @@
       <br>
       <button id="new-shoe-btn"> Bippity-boppity-boo, create a new shoe!</button>
     </p>
+
     <div id="new-or-old-user">
     <p style="text-align:center">
       <span id="shoe-card?">
@@ -63,16 +66,84 @@
       <button id="previous-user"> I've already created a shoe card</button>
     </p>
     </div>
-    <div id="shoe-collection">
-      [user cards here]
-      [user card contains its own button to add shoe]
-      <header>
-        <h2>Shoe Cards</h2>
-      </header>
+    <div class="container">
+    <div class="row" id= 'bottom-section'>
+      <div class="col-sm-3" id='side-column'>
+        <form id="create-shoe-form">
+          <h4>Select your shoe size: </h4>
+          <input type="radio" id="size6" name="size" value="6">
+          <label for="size6">US 6</label><br>
+          <input type="radio" id="size6.5" name="size" value="6.5">
+          <label for="size6.5">US 6.5</label><br>
 
-      <main>
-        <!-- Add our Pokemon -->
-      </main>
+          <input type="radio" id="size7" name="size" value="7">
+          <label for="size7">US 7</label><br>
+          <input type="radio" id="size7.5" name="size" value="7.5">
+          <label for="size7.5">US 7.5</label><br>
+
+          <input type="radio" id="size8" name="size" value="8">
+          <label for="size8">US 8</label><br>
+          <input type="radio" id="size8.5" name="size" value="8.5">
+          <label for="size8.5">US 8.5</label><br>
+
+          <input type="radio" id="size9" name="size" value="9">
+          <label for="size9">US 9</label><br>
+          <input type="radio" id="size9.5" name="size" value="9.5">
+          <label for="size9.5">US 9.5</label><br>
+
+          <input type="radio" id="size10" name="size" value="10">
+          <label for="size10">US 10</label><br>
+          <input type="radio" id="size10.5" name="size" value="10.5">
+          <label for="size10.5">US 10.5</label><br>
+          </input>
+          <br>
+          <label for="style">Choose a Heel Style:</label>
+          <select id="style" name="style">
+            <option value="stiletto">Stiletto</option>
+            <option value="platform">Platform Heel</option>
+            <option value="cone">Cone Heel</option>
+            <option value="maryjane">Mary Jane Platforms</option>
+            <option value="carspin">Scarpin Heel</option>
+          </select>
+          <br>
+          <h4>Select your heel height: </h4>
+          <input type="radio" id="height2" name="heel_height" value="2">
+          <label for="height2">2 inches</label><br>
+          <input type="radio" id="height2.5" name="heel_height" value="2.5">
+          <label for="height2.5">2.5 inches</label><br>
+          <input type="radio" id="height3" name="heel_height" value="3">
+          <label for="height3">3 inches</label><br>
+          <input type="radio" id="height3.5" name="heel_height" value="3.5">
+          <label for="height3.5">3.5 inches</label><br>
+          <input type="radio" id="height4" name="heel_height" value="4">
+          <label for="height4">4 inches</label><br>
+          <input type="radio" id="height4.5" name="heel_height" value="4.5">
+          <label for="height4.5">4.5 inches</label><br>
+          <input type="radio" id="height5" name="heel_height" value="5">
+          <label for="height5">5 inches</label><br>
+          <br>
+          <label for="color">Select your Shoe color:</label>
+          <input type="color" id="color" name="color" value="#ff000">
+
+          <input
+          type="text"
+          name="name"
+          value=""
+          placeholder="shoe name"
+          class="input-text"
+          id= "shoename-input"></input>
+          <input
+          type="submit"
+          name="submit"
+          value="Create New Shoe"
+          class="submit"
+          id="submit-new-shoe"></input>
+        </form>
+      </div>
+      <div id="shoe-collection">
+      </div>
     </div>
+  </div>
+
   </body>
 </html>

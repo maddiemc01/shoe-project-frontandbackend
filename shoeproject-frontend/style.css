@@ -22,25 +22,19 @@ body {
   font-family: cursive;
 }
 
-#shoe-collection {
-  margin: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .card {
   text-align: center;
   border: grey solid 1px;
   padding: 1rem;
-  width: 70%;
-  height: 40rem;
+  width: 90%;
+  height: 30rem;
   display: inline-grid;
   margin: 1rem 2rem;
   box-shadow: 3px 4px pink;
 }
 
 img {
-  width: 20rem;
+  width: 10rem;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -79,9 +73,19 @@ button:hover {
   opacity: .8;
 }
 
-#shoe-collection {
+#bottom-section {
   display: none;
 }
+
+#side-column {
+  outline: hotpink solid 1px;
+  display: none;
+}
+
+#shoe-collection {
+  outline: hotpink solid 1px;
+}
+
 
 #new-or-old-user {
   display: none;
@@ -125,3 +129,4 @@ button:hover {
   font-family: cursive;
   margin: 3px;
 }
+

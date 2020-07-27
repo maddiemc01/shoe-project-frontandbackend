@@ -15,10 +15,6 @@ class UsersController < ApplicationController
     render json: user.to_json
   end
 
-  def show
-    #show the shoes of a specific user
-  end
-
   def destroy
     user = User.find(params[:id])
     user.destroy

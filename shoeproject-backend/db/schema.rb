@@ -10,18 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_23_134601) do
+ActiveRecord::Schema.define(version: 2020_07_27_125616) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "shoes", force: :cascade do |t|
-    t.integer "size"
     t.string "style"
-    t.integer "heel_height"
     t.string "color"
-    t.boolean "open_toe"
     t.bigint "user_id"
+    t.string "name"
+    t.string "size"
+    t.string "heel_height"
     t.index ["user_id"], name: "index_shoes_on_user_id"
   end
 
