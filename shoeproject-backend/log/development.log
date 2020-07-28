@@ -10243,3 +10243,1134 @@ Processing by ShoesController#create as JSON
 Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.7ms | Allocations: 3914)
 
 
+Started GET "/users" for ::1 at 2020-07-28 08:02:39 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 48ms (Views: 0.5ms | ActiveRecord: 2.8ms | Allocations: 1092)
+
+
+Started GET "/users/1/shoes" for ::1 at 2020-07-28 08:02:39 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"1"}
+Started GET "/users/2/shoes" for ::1 at 2020-07-28 08:02:39 -0400
+Started GET "/users/4/shoes" for ::1 at 2020-07-28 08:02:39 -0400
+Started GET "/users/5/shoes" for ::1 at 2020-07-28 08:02:39 -0400
+  [1m[36mShoe Load (9.0ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 17ms (Views: 0.2ms | ActiveRecord: 10.8ms | Allocations: 2760)
+
+
+Processing by ShoesController#index as */*
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"2"}
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"4"}
+  Parameters: {"user_id"=>"5"}
+  [1m[36mShoe Load (0.7ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 1.7ms | Allocations: 1429)
+
+
+  [1m[36mShoe Load (2.9ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 3.7ms | Allocations: 2602)
+
+
+  [1m[36mShoe Load (3.0ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 3.2ms | Allocations: 4010)
+
+
+Started GET "/users" for ::1 at 2020-07-28 08:02:41 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 1040)
+
+
+Started GET "/users/1/shoes" for ::1 at 2020-07-28 08:02:41 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mShoe Load (0.3ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1097)
+
+
+Started GET "/users/2/shoes" for ::1 at 2020-07-28 08:02:41 -0400
+Started GET "/users/4/shoes" for ::1 at 2020-07-28 08:02:41 -0400
+Started GET "/users/5/shoes" for ::1 at 2020-07-28 08:02:41 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"2"}
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"4"}
+  [1m[36mShoe Load (0.7ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+  [1m[36mShoe Load (2.0ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 0.7ms | Allocations: 1176)
+
+
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"5"}
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 2.0ms | Allocations: 2421)
+
+
+  [1m[36mShoe Load (1.9ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 1.9ms | Allocations: 1680)
+
+
+Started GET "/users" for ::1 at 2020-07-28 08:02:48 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 1040)
+
+
+Started GET "/users/1/shoes" for ::1 at 2020-07-28 08:02:48 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"1"}
+Started GET "/users/2/shoes" for ::1 at 2020-07-28 08:02:48 -0400
+  [1m[36mShoe Load (3.0ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 3.0ms | Allocations: 1628)
+
+
+Started GET "/users/4/shoes" for ::1 at 2020-07-28 08:02:48 -0400
+Started GET "/users/5/shoes" for ::1 at 2020-07-28 08:02:48 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"2"}
+Processing by ShoesController#index as */*
+  [1m[36mShoe Load (2.6ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+  Parameters: {"user_id"=>"4"}
+Processing by ShoesController#index as */*
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 2.6ms | Allocations: 1755)
+
+
+  Parameters: {"user_id"=>"5"}
+  [1m[36mShoe Load (1.1ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+  [1m[36mShoe Load (3.0ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.1ms | Allocations: 1637)
+
+
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 3.0ms | Allocations: 2621)
+
+
+Started GET "/users" for ::1 at 2020-07-28 08:02:53 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 1040)
+
+
+Started GET "/users/1/shoes" for ::1 at 2020-07-28 08:02:53 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mShoe Load (0.6ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 1563)
+
+
+Started GET "/users/2/shoes" for ::1 at 2020-07-28 08:02:53 -0400
+Started GET "/users/4/shoes" for ::1 at 2020-07-28 08:02:53 -0400
+Started GET "/users/5/shoes" for ::1 at 2020-07-28 08:02:53 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"2"}
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"4"}
+  [1m[36mShoe Load (1.1ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 2]]
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"5"}
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+  [1m[36mShoe Load (2.8ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 2.8ms | Allocations: 2203)
+
+
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 1.1ms | Allocations: 1725)
+
+
+  [1m[36mShoe Load (3.4ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 3.4ms | Allocations: 3254)
+
+
+Started GET "/users" for ::1 at 2020-07-28 08:02:53 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1040)
+
+
+Started GET "/users/1/shoes" for ::1 at 2020-07-28 08:02:53 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"1"}
+Started GET "/users/2/shoes" for ::1 at 2020-07-28 08:02:53 -0400
+  [1m[36mShoe Load (5.3ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 5.3ms | Allocations: 1937)
+
+
+Started GET "/users/5/shoes" for ::1 at 2020-07-28 08:02:53 -0400
+Started GET "/users/4/shoes" for ::1 at 2020-07-28 08:02:53 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"2"}
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"4"}
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"5"}
+  [1m[36mShoe Load (0.7ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 2113)
+
+
+  [1m[36mShoe Load (0.5ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+  [1m[36mShoe Load (2.7ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 5]]
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 2404)
+
+
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 2.7ms | Allocations: 3752)
+
+
+Started GET "/users" for ::1 at 2020-07-28 08:02:55 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1040)
+
+
+Started GET "/users/1/shoes" for ::1 at 2020-07-28 08:02:55 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mShoe Load (1.0ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 22ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 1374)
+
+
+Started GET "/users/4/shoes" for ::1 at 2020-07-28 08:02:55 -0400
+Started GET "/users/2/shoes" for ::1 at 2020-07-28 08:02:55 -0400
+Started GET "/users/5/shoes" for ::1 at 2020-07-28 08:02:55 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"4"}
+Processing by ShoesController#index as */*
+Processing by ShoesController#index as */*
+  [1m[36mShoe Load (0.7ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 4]]
+  Parameters: {"user_id"=>"2"}
+  Parameters: {"user_id"=>"5"}
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+  [1m[36mShoe Load (0.6ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+  [1m[36mShoe Load (1.0ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 5]]
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 1834)
+
+
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 1688)
+
+
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 3255)
+
+
+Started GET "/users" for ::1 at 2020-07-28 08:03:11 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 1040)
+
+
+Started GET "/users/2/shoes" for ::1 at 2020-07-28 08:03:11 -0400
+Started GET "/users/1/shoes" for ::1 at 2020-07-28 08:03:11 -0400
+Started GET "/users/4/shoes" for ::1 at 2020-07-28 08:03:11 -0400
+Started GET "/users/5/shoes" for ::1 at 2020-07-28 08:03:11 -0400
+Processing by ShoesController#index as */*
+Processing by ShoesController#index as */*
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"5"}
+  Parameters: {"user_id"=>"1"}
+  Parameters: {"user_id"=>"2"}
+  [1m[36mShoe Load (0.6ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"4"}
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 1816)
+
+
+  [1m[36mShoe Load (2.3ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[36mShoe Load (0.8ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 1909)
+
+
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+  [1m[36mShoe Load (2.5ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 2.3ms | Allocations: 3977)
+
+
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 2.5ms | Allocations: 5290)
+
+
+Started GET "/users" for ::1 at 2020-07-28 08:03:23 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1040)
+
+
+Started GET "/users/1/shoes" for ::1 at 2020-07-28 08:03:23 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mShoe Load (0.4ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 1198)
+
+
+Started GET "/users/2/shoes" for ::1 at 2020-07-28 08:03:23 -0400
+Started GET "/users/4/shoes" for ::1 at 2020-07-28 08:03:23 -0400
+Started GET "/users/5/shoes" for ::1 at 2020-07-28 08:03:23 -0400
+Processing by ShoesController#index as */*
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"2"}
+  Parameters: {"user_id"=>"5"}
+  [1m[36mShoe Load (0.9ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 2]]
+Processing by ShoesController#index as */*
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+  Parameters: {"user_id"=>"4"}
+  [1m[36mShoe Load (2.4ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 2.4ms | Allocations: 2478)
+
+
+  [1m[36mShoe Load (1.9ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 1142)
+
+
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 1.9ms | Allocations: 2755)
+
+
+Started GET "/users" for ::1 at 2020-07-28 08:03:29 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1040)
+
+
+Started GET "/users/1/shoes" for ::1 at 2020-07-28 08:03:29 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mShoe Load (0.5ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 1]]
+Started GET "/users/2/shoes" for ::1 at 2020-07-28 08:03:29 -0400
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 1419)
+
+
+Started GET "/users/4/shoes" for ::1 at 2020-07-28 08:03:29 -0400
+Started GET "/users/5/shoes" for ::1 at 2020-07-28 08:03:29 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"2"}
+  [1m[36mShoe Load (0.5ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Processing by ShoesController#index as */*
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 1731)
+
+
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"4"}
+  Parameters: {"user_id"=>"5"}
+  [1m[36mShoe Load (0.5ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+  [1m[36mShoe Load (0.8ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 5]]
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 1404)
+
+
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 2770)
+
+
+Started GET "/users" for ::1 at 2020-07-28 08:03:36 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1040)
+
+
+Started GET "/users/1/shoes" for ::1 at 2020-07-28 08:03:36 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mShoe Load (0.2ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1067)
+
+
+Started GET "/users/2/shoes" for ::1 at 2020-07-28 08:03:36 -0400
+Started GET "/users/4/shoes" for ::1 at 2020-07-28 08:03:36 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"2"}
+Started GET "/users/5/shoes" for ::1 at 2020-07-28 08:03:36 -0400
+  [1m[36mShoe Load (1.0ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 1148)
+
+
+Processing by ShoesController#index as */*
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"5"}
+  Parameters: {"user_id"=>"4"}
+  [1m[36mShoe Load (1.0ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 1679)
+
+
+  [1m[36mShoe Load (0.7ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 2770)
+
+
+Started GET "/users" for ::1 at 2020-07-28 08:03:44 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1040)
+
+
+Started GET "/users/1/shoes" for ::1 at 2020-07-28 08:03:44 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"1"}
+Started GET "/users/2/shoes" for ::1 at 2020-07-28 08:03:44 -0400
+  [1m[36mShoe Load (1.3ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 1]]
+Started GET "/users/4/shoes" for ::1 at 2020-07-28 08:03:44 -0400
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 1.3ms | Allocations: 1915)
+
+
+Started GET "/users/5/shoes" for ::1 at 2020-07-28 08:03:44 -0400
+Processing by ShoesController#index as */*
+Processing by ShoesController#index as */*
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"4"}
+  Parameters: {"user_id"=>"2"}
+  Parameters: {"user_id"=>"5"}
+  [1m[36mShoe Load (1.4ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+  [1m[36mShoe Load (0.6ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 5]]
+  [1m[36mShoe Load (1.2ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 2]]
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 1.4ms | Allocations: 1604)
+
+
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 3586)
+
+
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.2ms | Allocations: 2913)
+
+
+Started GET "/users" for ::1 at 2020-07-28 08:04:00 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1040)
+
+
+Started GET "/users/1/shoes" for ::1 at 2020-07-28 08:04:00 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mShoe Load (0.2ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1067)
+
+
+Started GET "/users/2/shoes" for ::1 at 2020-07-28 08:04:00 -0400
+Started GET "/users/4/shoes" for ::1 at 2020-07-28 08:04:00 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"2"}
+Started GET "/users/5/shoes" for ::1 at 2020-07-28 08:04:00 -0400
+  [1m[36mShoe Load (0.5ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 1379)
+
+
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"4"}
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"5"}
+  [1m[36mShoe Load (2.2ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 2.2ms | Allocations: 1778)
+
+
+  [1m[36mShoe Load (2.3ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 2.3ms | Allocations: 2770)
+
+
+Started GET "/users" for ::1 at 2020-07-28 08:05:55 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1041)
+
+
+Started GET "/users/1/shoes" for ::1 at 2020-07-28 08:05:55 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mShoe Load (0.2ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1067)
+
+
+Started GET "/users/2/shoes" for ::1 at 2020-07-28 08:05:55 -0400
+Started GET "/users/4/shoes" for ::1 at 2020-07-28 08:05:55 -0400
+Started GET "/users/5/shoes" for ::1 at 2020-07-28 08:05:55 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"2"}
+Processing by ShoesController#index as */*
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"4"}
+  Parameters: {"user_id"=>"5"}
+  [1m[36mShoe Load (1.2ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[36mShoe Load (0.7ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 1.2ms | Allocations: 1864)
+
+
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+  [1m[36mShoe Load (0.8ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 5]]
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 2421)
+
+
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 3788)
+
+
+Started GET "/users" for ::1 at 2020-07-28 08:06:17 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1040)
+
+
+Started GET "/users/1/shoes" for ::1 at 2020-07-28 08:06:17 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mShoe Load (0.2ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1081)
+
+
+Started GET "/users/2/shoes" for ::1 at 2020-07-28 08:06:17 -0400
+Started GET "/users/4/shoes" for ::1 at 2020-07-28 08:06:17 -0400
+Started GET "/users/5/shoes" for ::1 at 2020-07-28 08:06:17 -0400
+Processing by ShoesController#index as */*
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"5"}
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"4"}
+  Parameters: {"user_id"=>"2"}
+  [1m[36mShoe Load (0.5ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+  [1m[36mShoe Load (0.5ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[36mShoe Load (1.2ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 4]]
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 1885)
+
+
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 2948)
+
+
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 1.2ms | Allocations: 3751)
+
+
+Started GET "/users" for ::1 at 2020-07-28 08:07:17 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1040)
+
+
+Started GET "/users/1/shoes" for ::1 at 2020-07-28 08:07:17 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mShoe Load (0.2ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1067)
+
+
+Started GET "/users/2/shoes" for ::1 at 2020-07-28 08:07:17 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"2"}
+  [1m[36mShoe Load (0.2ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 940)
+
+
+Started GET "/users/4/shoes" for ::1 at 2020-07-28 08:07:17 -0400
+Started GET "/users/5/shoes" for ::1 at 2020-07-28 08:07:17 -0400
+Processing by ShoesController#index as */*
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"4"}
+  Parameters: {"user_id"=>"5"}
+  [1m[36mShoe Load (0.5ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 4]]
+  [1m[36mShoe Load (0.2ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 1896)
+
+
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 2569)
+
+
+Started GET "/users" for ::1 at 2020-07-28 08:07:24 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1040)
+
+
+Started GET "/users/1/shoes" for ::1 at 2020-07-28 08:07:24 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mShoe Load (0.4ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 1]]
+Started GET "/users/2/shoes" for ::1 at 2020-07-28 08:07:24 -0400
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Started GET "/users/4/shoes" for ::1 at 2020-07-28 08:07:24 -0400
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 1751)
+
+
+Started GET "/users/5/shoes" for ::1 at 2020-07-28 08:07:24 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"2"}
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"4"}
+  [1m[36mShoe Load (0.3ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 1557)
+
+
+  [1m[36mShoe Load (1.7ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 4]]
+Processing by ShoesController#index as */*
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+  Parameters: {"user_id"=>"5"}
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.7ms | Allocations: 2610)
+
+
+  [1m[36mShoe Load (0.3ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1680)
+
+
+Started GET "/users" for ::1 at 2020-07-28 08:07:34 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1040)
+
+
+Started GET "/users/1/shoes" for ::1 at 2020-07-28 08:07:34 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mShoe Load (0.2ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1067)
+
+
+Started GET "/users/2/shoes" for ::1 at 2020-07-28 08:07:34 -0400
+Started GET "/users/4/shoes" for ::1 at 2020-07-28 08:07:34 -0400
+Started GET "/users/5/shoes" for ::1 at 2020-07-28 08:07:34 -0400
+Processing by ShoesController#index as */*
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"2"}
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"5"}
+  [1m[36mShoe Load (1.4ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[36mShoe Load (0.4ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 1.4ms | Allocations: 1640)
+
+
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 2275)
+
+
+  Parameters: {"user_id"=>"4"}
+  [1m[36mShoe Load (1.2ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 1.2ms | Allocations: 1204)
+
+
+Started GET "/users" for ::1 at 2020-07-28 08:07:41 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1040)
+
+
+Started GET "/users/1/shoes" for ::1 at 2020-07-28 08:07:41 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mShoe Load (0.2ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1067)
+
+
+Started GET "/users/2/shoes" for ::1 at 2020-07-28 08:07:41 -0400
+Started GET "/users/5/shoes" for ::1 at 2020-07-28 08:07:41 -0400
+Started GET "/users/4/shoes" for ::1 at 2020-07-28 08:07:41 -0400
+Processing by ShoesController#index as */*
+Processing by ShoesController#index as */*
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"4"}
+  Parameters: {"user_id"=>"5"}
+  Parameters: {"user_id"=>"2"}
+  [1m[36mShoe Load (1.2ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 4]]
+  [1m[36mShoe Load (3.1ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 5]]
+  [1m[36mShoe Load (1.5ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 1.2ms | Allocations: 2615)
+
+
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.5ms | Allocations: 2728)
+
+
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 3.1ms | Allocations: 3760)
+
+
+Started GET "/users" for ::1 at 2020-07-28 08:08:35 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1040)
+
+
+Started GET "/users/1/shoes" for ::1 at 2020-07-28 08:08:35 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"1"}
+Started GET "/users/4/shoes" for ::1 at 2020-07-28 08:08:35 -0400
+Started GET "/users/2/shoes" for ::1 at 2020-07-28 08:08:35 -0400
+Started GET "/users/5/shoes" for ::1 at 2020-07-28 08:08:35 -0400
+  [1m[36mShoe Load (2.4ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 2.4ms | Allocations: 2108)
+
+
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"4"}
+Processing by ShoesController#index as */*
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"5"}
+  [1m[36mShoe Load (0.7ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+  Parameters: {"user_id"=>"2"}
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 1825)
+
+
+  [1m[36mShoe Load (0.7ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+  [1m[36mShoe Load (1.9ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.9ms | Allocations: 2481)
+
+
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 2941)
+
+
+Started GET "/users" for ::1 at 2020-07-28 08:08:40 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 1041)
+
+
+Started GET "/users/1/shoes" for ::1 at 2020-07-28 08:08:40 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mShoe Load (0.2ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 1067)
+
+
+Started GET "/users/4/shoes" for ::1 at 2020-07-28 08:08:40 -0400
+Started GET "/users/2/shoes" for ::1 at 2020-07-28 08:08:40 -0400
+Started GET "/users/5/shoes" for ::1 at 2020-07-28 08:08:40 -0400
+Processing by ShoesController#index as */*
+Processing by ShoesController#index as */*
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"5"}
+  Parameters: {"user_id"=>"4"}
+  Parameters: {"user_id"=>"2"}
+  [1m[36mShoe Load (2.0ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 2.0ms | Allocations: 1885)
+
+
+  [1m[36mShoe Load (0.4ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 2531)
+
+
+  [1m[36mShoe Load (1.0ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 3952)
+
+
+Started GET "/users" for ::1 at 2020-07-28 08:08:50 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1040)
+
+
+Started GET "/users/1/shoes" for ::1 at 2020-07-28 08:08:50 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mShoe Load (0.3ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1068)
+
+
+Started GET "/users/2/shoes" for ::1 at 2020-07-28 08:08:50 -0400
+Started GET "/users/4/shoes" for ::1 at 2020-07-28 08:08:50 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"2"}
+Processing by ShoesController#index as */*
+Started GET "/users/5/shoes" for ::1 at 2020-07-28 08:08:50 -0400
+  [1m[36mShoe Load (0.7ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 2]]
+  Parameters: {"user_id"=>"4"}
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 1337)
+
+
+  [1m[36mShoe Load (1.9ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.9ms | Allocations: 1697)
+
+
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"5"}
+  [1m[36mShoe Load (0.2ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1479)
+
+
+Started GET "/users" for ::1 at 2020-07-28 08:09:02 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1040)
+
+
+Started GET "/users/1/shoes" for ::1 at 2020-07-28 08:09:02 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mShoe Load (0.3ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1068)
+
+
+Started GET "/users/2/shoes" for ::1 at 2020-07-28 08:09:02 -0400
+Started GET "/users/4/shoes" for ::1 at 2020-07-28 08:09:02 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"2"}
+Started GET "/users/5/shoes" for ::1 at 2020-07-28 08:09:02 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"4"}
+  [1m[36mShoe Load (0.5ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 1124)
+
+
+  [1m[36mShoe Load (2.0ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 2.0ms | Allocations: 2210)
+
+
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"5"}
+  [1m[36mShoe Load (1.5ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 1.5ms | Allocations: 1479)
+
+
+Started GET "/users" for ::1 at 2020-07-28 08:10:05 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 1040)
+
+
+Started GET "/users/1/shoes" for ::1 at 2020-07-28 08:10:05 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mShoe Load (0.2ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1067)
+
+
+Started GET "/users/4/shoes" for ::1 at 2020-07-28 08:10:05 -0400
+Started GET "/users/2/shoes" for ::1 at 2020-07-28 08:10:05 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"4"}
+Started GET "/users/5/shoes" for ::1 at 2020-07-28 08:10:05 -0400
+Processing by ShoesController#index as */*
+  [1m[36mShoe Load (2.1ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 4]]
+  Parameters: {"user_id"=>"2"}
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 2.1ms | Allocations: 1814)
+
+
+  [1m[36mShoe Load (2.2ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 2.2ms | Allocations: 1863)
+
+
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"5"}
+  [1m[36mShoe Load (0.3ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1479)
+
+
+Started GET "/users" for ::1 at 2020-07-28 08:10:10 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1040)
+
+
+Started GET "/users/1/shoes" for ::1 at 2020-07-28 08:10:10 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mShoe Load (0.2ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1067)
+
+
+Started GET "/users/2/shoes" for ::1 at 2020-07-28 08:10:10 -0400
+Started GET "/users/5/shoes" for ::1 at 2020-07-28 08:10:10 -0400
+Started GET "/users/4/shoes" for ::1 at 2020-07-28 08:10:10 -0400
+Processing by ShoesController#index as */*
+Processing by ShoesController#index as */*
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"5"}
+  Parameters: {"user_id"=>"4"}
+  Parameters: {"user_id"=>"2"}
+  [1m[36mShoe Load (1.1ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 5]]
+  [1m[36mShoe Load (0.8ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 2771)
+
+
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.1ms | Allocations: 2377)
+
+
+  [1m[36mShoe Load (1.2ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 1.2ms | Allocations: 3790)
+
+
+Started GET "/users" for ::1 at 2020-07-28 08:10:25 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1040)
+
+
+Started GET "/users/1/shoes" for ::1 at 2020-07-28 08:10:25 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mShoe Load (0.2ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1067)
+
+
+Started GET "/users/2/shoes" for ::1 at 2020-07-28 08:10:25 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"2"}
+  [1m[36mShoe Load (0.3ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 930)
+
+
+Started GET "/users/4/shoes" for ::1 at 2020-07-28 08:10:25 -0400
+Started GET "/users/5/shoes" for ::1 at 2020-07-28 08:10:25 -0400
+Processing by ShoesController#index as */*
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"5"}
+  Parameters: {"user_id"=>"4"}
+  [1m[36mShoe Load (0.5ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 5]]
+  [1m[36mShoe Load (0.2ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 2178)
+
+
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 2570)
+
+
+Started GET "/users" for ::1 at 2020-07-28 08:10:32 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1040)
+
+
+Started GET "/users/1/shoes" for ::1 at 2020-07-28 08:10:32 -0400
+Started GET "/users/2/shoes" for ::1 at 2020-07-28 08:10:32 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"2"}
+Processing by ShoesController#index as */*
+  [1m[36mShoe Load (0.3ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 2]]
+  Parameters: {"user_id"=>"1"}
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Started GET "/users/4/shoes" for ::1 at 2020-07-28 08:10:32 -0400
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1431)
+
+
+  [1m[36mShoe Load (0.8ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Started GET "/users/5/shoes" for ::1 at 2020-07-28 08:10:32 -0400
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 1935)
+
+
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"4"}
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"5"}
+  [1m[36mShoe Load (0.7ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 4]]
+  [1m[36mShoe Load (0.4ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 2569)
+
+
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 1920)
+
+
+Started GET "/users" for ::1 at 2020-07-28 08:10:54 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 1040)
+
+
+Started GET "/users/1/shoes" for ::1 at 2020-07-28 08:10:54 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mShoe Load (0.2ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1081)
+
+
+Started GET "/users/2/shoes" for ::1 at 2020-07-28 08:10:54 -0400
+Started GET "/users/4/shoes" for ::1 at 2020-07-28 08:10:54 -0400
+Started GET "/users/5/shoes" for ::1 at 2020-07-28 08:10:54 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"2"}
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"4"}
+Processing by ShoesController#index as */*
+  [1m[36mShoe Load (1.4ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 4]]
+  Parameters: {"user_id"=>"5"}
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 1.4ms | Allocations: 1813)
+
+
+  [1m[36mShoe Load (2.4ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+  [1m[36mShoe Load (1.3ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 5]]
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 2.4ms | Allocations: 3256)
+
+
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.3ms | Allocations: 3225)
+
+
+Started GET "/users" for ::1 at 2020-07-28 08:11:01 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 1040)
+
+
+Started GET "/users/1/shoes" for ::1 at 2020-07-28 08:11:01 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mShoe Load (0.2ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1067)
+
+
+Started GET "/users/2/shoes" for ::1 at 2020-07-28 08:11:01 -0400
+Started GET "/users/4/shoes" for ::1 at 2020-07-28 08:11:01 -0400
+Processing by ShoesController#index as */*
+Started GET "/users/5/shoes" for ::1 at 2020-07-28 08:11:01 -0400
+  Parameters: {"user_id"=>"2"}
+  [1m[36mShoe Load (0.3ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1130)
+
+
+Processing by ShoesController#index as */*
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"4"}
+  Parameters: {"user_id"=>"5"}
+  [1m[36mShoe Load (0.5ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 1369)
+
+
+  [1m[36mShoe Load (1.8ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 1.8ms | Allocations: 2770)
+
+
+Started GET "/users" for ::1 at 2020-07-28 08:12:23 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1040)
+
+
+Started GET "/users/1/shoes" for ::1 at 2020-07-28 08:12:23 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mShoe Load (0.3ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1088)
+
+
+Started GET "/users/2/shoes" for ::1 at 2020-07-28 08:12:23 -0400
+Started GET "/users/4/shoes" for ::1 at 2020-07-28 08:12:23 -0400
+Processing by ShoesController#index as */*
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"2"}
+  Parameters: {"user_id"=>"4"}
+  [1m[36mShoe Load (0.8ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[36mShoe Load (0.5ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 4]]
+Started GET "/users/5/shoes" for ::1 at 2020-07-28 08:12:23 -0400
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 2091)
+
+
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 2527)
+
+
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"5"}
+  [1m[36mShoe Load (0.3ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1479)
+
+
