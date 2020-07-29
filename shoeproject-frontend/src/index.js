@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const newUserContainer = document.querySelector("#new-user-form-container")
   newUserBtn.addEventListener("click", () => {
     hide(generalContainer)
+    addUser = !addUser
     toggle(newUserContainer, addUser)
   })
 
@@ -53,10 +54,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const cardContainer = document.querySelector("#shoe-collection")
   cardContainer.innerHTML = ""
   previousUserBtn.addEventListener("click", () => {
-    addUser = !addUser
-    hide(newUserContainer)
     showCards = !showCards
     if (showCards) {
+      addUser = !addUser
+      hide(newUserContainer)
       show(generalContainer)
       cardContainer.innerHTML = ""
       cardContainer.classList = "col-sm-12"
@@ -88,22 +89,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
 })
 
-  function addShoetoUser(shoe) {
-    const userId = shoe.user_id
-    const shoeList = document.querySelector(`#shoe-list-of-${userId}`)
-    const shoeItem = document.createElement('li')
-    shoeItem.innerHTML = `
-    Shoe Name: ${shoe.name}
-    <button id="see-shoe-${shoe.id}-details"> See Shoe Details </button>
-    <button id="delete-shoe-${shoe.id}"> Delete Shoe </button>`
-    shoeItem.id = `shoe-${shoe.id}`
-    shoeList.append(shoeItem)
+function addShoetoUser(shoe) {
+  const userId = shoe.user_id
+  const shoeList = document.querySelector(`#shoe-list-of-${userId}`)
+  const shoeItem = document.createElement('li')
+  shoeItem.innerHTML = `
+  Shoe Name: ${shoe.name}
+  <button id="see-shoe-${shoe.id}-details"> See Shoe Details </button>
+  <button id="delete-shoe-${shoe.id}"> Delete Shoe </button>`
+  shoeItem.id = `shoe-${shoe.id}`
+  shoeList.append(shoeItem)
 
-    document.querySelector(`#see-shoe-${shoe.id}-details`).addEventListener("click", () => {
-      showShoeDetails(shoe)
-    })
-    deleteShoe(shoe, userId)
-  }
+  document.querySelector(`#see-shoe-${shoe.id}-details`).addEventListener("click", () => {
+    showShoeDetails(shoe)
+  })
+  deleteShoe(shoe, userId)
+}
 
 function addCard(user) {
   const card = document.createElement('div');
@@ -112,7 +113,7 @@ function addCard(user) {
   card.innerHTML = `
     <div id="usercard-${user.id}" class="profile">
       <h1> ${user.name} </h1>
-      <img src= ${user.image_url} alt="(no profile imag)"></img>
+      <img src= ${user.image_url} alt="(no profile image)"></img>
       <p> ${user.name}'s Shoes:
         <ul id="shoe-list-of-${user.id}" class="shoe-list">
         </ul>
@@ -142,10 +143,10 @@ function addCard(user) {
     hide(document.querySelector(`#shoe-of-${thisUser}`))
     document.querySelector(`#usercard-${thisUser}`).classList = "col-sm-12"
     document.querySelector("#shoe-user").value = thisUser
-    const formSection = document.querySelector("#side-column")
-    let form = document.querySelector(`#create-shoe-form`)
-    resetForm(form)
 
+    resetForm()
+
+    const formSection = document.querySelector("#side-column")
     shoeForm = !shoeForm
     if (shoeForm) {
       show(formSection)
@@ -157,7 +158,8 @@ function addCard(user) {
   })
 }
 
-function resetForm(form) {
+function resetForm() {
+  let form = document.querySelector(`#create-shoe-form`)
   form.style.value = ""
   form.color.value = ""
   form.name.value = ""

@@ -1,8 +1,8 @@
 import { fetchCreateUser, fetchCreateShoe, fetchUsers, fetchShoes, fetchDeleteShoe, fetchDeleteUser } from "./api.js"
-
-let createShoe = false;
-let addUser = false;
-let showCards = false;
+import { toggleNewOrOldUser, toggleNewUserForm, toggleBottomSection, toggleNewShoeForm } from "./toggles.js"
+// let createShoe = false;
+// let addUser = false;
+// let showCards = false;
 let shoeForm = false;
 
 function hide(section) {
@@ -13,31 +13,22 @@ function show(section) {
  section.style.display = "block"
 }
 
-function toggle(section, bool) {
-  bool = !bool;
-  if (bool) {
-    show(section)
-  } else {
-    hide(section)
-  }
-}
+const cardContainer = document.querySelector("#shoe-collection")
+
 document.addEventListener("DOMContentLoaded", () => {
 
   const addBtn = document.querySelector("#new-shoe-btn");
-  const askUserSection = document.querySelector("#new-or-old-user");
   addBtn.addEventListener("click", () => {
-    toggle(askUserSection, createShoe)
+    toggleNewOrOldUser()
   });
 
   const newUserBtn = document.querySelector("#new-user")
-  const newUserContainer = document.querySelector("#new-user-form-container")
   newUserBtn.addEventListener("click", () => {
-    hide(generalContainer)
-    addUser = !addUser
-    toggle(newUserContainer, addUser)
+    toggleNewUserForm()
   })
 
   document.querySelector(".add-user-form").addEventListener("submit", (submitevent) => {
+    const newUserContainer = document.querySelector("#new-user-form-container")
     hide(newUserContainer)
     submitevent.preventDefault()
     const nameEl = document.querySelector("#name-input")
@@ -46,26 +37,14 @@ document.addEventListener("DOMContentLoaded", () => {
       "name": nameEl.value,
       "image_url": imageEl.value,
     }
+    const generalContainer = document.querySelector("#bottom-section")
     fetchCreateUser(show, generalContainer, addCard, body, nameEl, imageEl)
   })
 
   const previousUserBtn = document.querySelector("#previous-user")
-  const generalContainer = document.querySelector("#bottom-section")
-  const cardContainer = document.querySelector("#shoe-collection")
   cardContainer.innerHTML = ""
   previousUserBtn.addEventListener("click", () => {
-    showCards = !showCards
-    if (showCards) {
-      addUser = !addUser
-      hide(newUserContainer)
-      show(generalContainer)
-      cardContainer.innerHTML = ""
-      cardContainer.classList = "col-sm-12"
-      hide(document.querySelector(`#side-column`))
-      fetchUsers(addCard)
-    } else {
-      hide(generalContainer)
-    }
+    toggleBottomSection(fetchUsers, addCard)
   })
 
   document.querySelector("#create-shoe-form").addEventListener("submit", (event) => {
@@ -126,7 +105,6 @@ function addCard(user) {
     </div>
   `
 
-  const cardContainer = document.querySelector("#shoe-collection")
   cardContainer.prepend(card)
 
   fetchShoes(user, displayShoeList)
@@ -146,15 +124,7 @@ function addCard(user) {
 
     resetForm()
 
-    const formSection = document.querySelector("#side-column")
-    shoeForm = !shoeForm
-    if (shoeForm) {
-      show(formSection)
-      cardContainer.classList = "col-sm-9"
-    } else {
-      hide(formSection)
-      cardContainer.classList = "col-sm-12"
-    }
+    toggleNewShoeForm()
   })
 }
 
@@ -196,7 +166,6 @@ function deleteShoe(shoe, userId) {
     document.querySelector(`#shoe-of-${userId}`).style.display = "none"
     document.querySelector(`#usercard-${userId}`).classList = "col-sm-12"
     let shoebeingdeleted = document.querySelector(`#shoe-${shoe.id}`)
-
     fetchDeleteShoe(shoebeingdeleted, shoe, userId)
   })
 }
