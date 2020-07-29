@@ -1,3 +1,4 @@
+import { fetchCreateUser, fetchCreateShoe, fetchUsers, fetchShoes, fetchDeleteShoe, fetchDeleteUser } from "./api.js"
 
 let createShoe = false;
 let addUser = false;
@@ -12,29 +13,27 @@ function show(section) {
  section.style.display = "block"
 }
 
+function toggle(section, bool) {
+  bool = !bool;
+  if (bool) {
+    show(section)
+  } else {
+    hide(section)
+  }
+}
 document.addEventListener("DOMContentLoaded", () => {
 
   const addBtn = document.querySelector("#new-shoe-btn");
-  const shoeUserSection = document.querySelector("#new-or-old-user");
+  const askUserSection = document.querySelector("#new-or-old-user");
   addBtn.addEventListener("click", () => {
-    createShoe = !createShoe;
-    if (createShoe) {
-      show(shoeUserSection)
-    } else {
-      hide(shoeUserSection)
-    }
+    toggle(askUserSection, createShoe)
   });
 
   const newUserBtn = document.querySelector("#new-user")
   const newUserContainer = document.querySelector("#new-user-form-container")
   newUserBtn.addEventListener("click", () => {
     hide(generalContainer)
-    addUser = !addUser
-    if (addUser) {
-      show(newUserContainer)
-    } else {
-      hide(newUserContainer)
-    }
+    toggle(newUserContainer, addUser)
   })
 
   document.querySelector(".add-user-form").addEventListener("submit", (submitevent) => {
@@ -42,24 +41,11 @@ document.addEventListener("DOMContentLoaded", () => {
     submitevent.preventDefault()
     const nameEl = document.querySelector("#name-input")
     const imageEl = document.querySelector("#image-input")
-
-    fetch("http://localhost:3000/users", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Accept": "application/json"
-      },
-      body: JSON.stringify({
-        "name": nameEl.value,
-        "image_url": imageEl.value,
-      })
-    }).then(resp => { return resp.json()
-    }).then(user => {
-      show(generalContainer)
-      addCard(user)
-      nameEl.value = "" //this will revert the text box to blank once submitted
-      imageEl.value = ""
-    })
+    let body = {
+      "name": nameEl.value,
+      "image_url": imageEl.value,
+    }
+    fetchCreateUser(show, generalContainer, addCard, body, nameEl, imageEl)
   })
 
   const previousUserBtn = document.querySelector("#previous-user")
@@ -75,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
       cardContainer.innerHTML = ""
       cardContainer.classList = "col-sm-12"
       hide(document.querySelector(`#side-column`))
-      loadUsers()
+      fetchUsers(addCard)
     } else {
       hide(generalContainer)
     }
@@ -87,28 +73,20 @@ document.addEventListener("DOMContentLoaded", () => {
     hide(document.querySelector(`#side-column`))
     cardContainer.classList = "col-sm-12"
     let form = event.target
-    fetch(`http://localhost:3000/users/${form.user.value}/shoes`, {
-      method: "POST",
-      headers: {
-          "Content-Type": "application/json",
-          "Accept": "application/json"
-        },
-        body: JSON.stringify({
-            "shoe": {
-              "name": form.name.value,
-              "heel_height": form.heel_height.value,
-              "size": form.size.value,
-              "style": form.style.value,
-              "color": form.color.value,
-              "user_id": form.user.value
-            }
-        })
-      }).then(resp => resp.json())
-        .then(newshoe => {
-          addShoetoUser(newshoe)
-        })
-      })
+    let body = {
+      "shoe": {
+        "name": form.name.value,
+        "heel_height": form.heel_height.value,
+        "size": form.size.value,
+        "style": form.style.value,
+        "color": form.color.value,
+        "user_id": form.user.value
+      }
+    }
+    fetchCreateShoe(form, body, addShoetoUser)
   })
+
+})
 
   function addShoetoUser(shoe) {
     const userId = shoe.user_id
@@ -124,17 +102,8 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector(`#see-shoe-${shoe.id}-details`).addEventListener("click", () => {
       showShoeDetails(shoe)
     })
-
     deleteShoe(shoe, userId)
   }
-
-function loadUsers() {
-  fetch("http://localhost:3000/users")
-  .then(resp => resp.json())
-  .then(allUsers => {
-    allUsers.forEach(user => addCard(user))
-  })
-}
 
 function addCard(user) {
   const card = document.createElement('div');
@@ -159,7 +128,7 @@ function addCard(user) {
   const cardContainer = document.querySelector("#shoe-collection")
   cardContainer.prepend(card)
 
-  showShoes(user)
+  fetchShoes(user, displayShoeList)
 
   let deleteUserBtn = document.querySelector("[delete-user-id]")
   deleteUserBtn.addEventListener("click", () => {
@@ -175,14 +144,7 @@ function addCard(user) {
     document.querySelector("#shoe-user").value = thisUser
     const formSection = document.querySelector("#side-column")
     let form = document.querySelector(`#create-shoe-form`)
-    form.style.value = ""
-    form.color.value = ""
-    form.name.value = ""
-
-    for(const s of form.size) {
-      s.checked = false }
-    for(const h of form.heel_height) {
-      h.checked = false }
+    resetForm(form)
 
     shoeForm = !shoeForm
     if (shoeForm) {
@@ -195,14 +157,18 @@ function addCard(user) {
   })
 }
 
-function showShoes(user) {
-  fetch(`http://localhost:3000/users/${user.id}/shoes`)
-  .then(resp => resp.json())
-  .then(shoeArray => displayShoeList(shoeArray))
+function resetForm(form) {
+  form.style.value = ""
+  form.color.value = ""
+  form.name.value = ""
+
+  for(const s of form.size) {
+    s.checked = false }
+  for(const h of form.heel_height) {
+    h.checked = false }
 }
 
 function displayShoeList(shoeArray) {
-  console.log(shoeArray)
   for(const shoe of shoeArray) {
     addShoetoUser(shoe)
   }
@@ -220,7 +186,6 @@ function showShoeDetails(shoe) {
   It will add an extra ${shoe.heel_height}, slendering the legs and complimenting the whole figure.
   This ${shoe.style} is also in the unique shade of ${shoe.color}.
   `
-
 }
 
 function deleteShoe(shoe, userId) {
@@ -229,28 +194,12 @@ function deleteShoe(shoe, userId) {
     document.querySelector(`#shoe-of-${userId}`).style.display = "none"
     document.querySelector(`#usercard-${userId}`).classList = "col-sm-12"
     let shoebeingdeleted = document.querySelector(`#shoe-${shoe.id}`)
-    fetch(`http://localhost:3000/users/${userId}/shoes/${shoe.id}`, {
-      method: "DELETE",
-      headers: {
-        "Content-Type": "application/json",
-        "Accept": "application/json"
-      }
-    }).then(resp => { return resp.json()
-    }).then(resp => { shoebeingdeleted.remove() })
+
+    fetchDeleteShoe(shoebeingdeleted, shoe, userId)
   })
 }
 
 function deleteUser(userId) {
   let cardBeingDeleted = document.querySelector(`#user-card-${userId}`)
-  console.log(cardBeingDeleted.parent)
-  fetch(`http://localhost:3000/users/${userId}`, {
-    method: "DELETE",
-    headers: {
-      "Content-Type": "application/json",
-      "Accept": "application/json"
-    }
-  }).then(resp => { return resp.json()
-  }).then(resp => {
-    cardBeingDeleted.remove()
-  })
+  fetchDeleteUser(cardBeingDeleted, userId)
 }
