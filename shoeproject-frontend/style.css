@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: monospace;
+  font-family: cursive;
 }
 
 #shoe-header {
@@ -8,12 +8,12 @@ body {
   justify-content: center;
   background: pink;
   opacity: .8;
-  height: 7rem;
+  height: 15rem;
   padding: 1rem;
 }
 
 #shoe-header img {
-  height: 6rem;
+  height: 13rem;
   width: auto;
 }
 
@@ -22,13 +22,35 @@ body {
   font-family: cursive;
 }
 
-.card {
+#new-shoe-btn {
+  font-family: cursive;
+}
+
+#shoe-card {
+  font-size: x-large;
+}
+
+#shoe-collection > .row {
   text-align: center;
   border: grey solid 1px;
-  padding: 1rem;
-  width: 90%;
-  height: 30rem;
-  display: inline-grid;
+  padding: 2rem;
+  width: 100%;
+  height: auto;
+  margin: 1rem 2rem;
+  box-shadow: 3px 4px pink;
+  font-family: cursive;
+}
+
+
+.row > .col-sm-3 {
+  text-align: center;
+  font-family: cursive;
+}
+
+#create-shoe-form {
+  border: grey solid 1px;
+  text-align: left;
+  padding: 2rem;
   margin: 1rem 2rem;
   box-shadow: 3px 4px pink;
 }
@@ -78,23 +100,24 @@ button:hover {
 }
 
 #side-column {
-  outline: hotpink solid 1px;
   display: none;
 }
 
-#shoe-collection {
-  outline: hotpink solid 1px;
+#submit-new-shoe {
+  font-size: smaller;
 }
-
 
 #new-or-old-user {
   display: none;
   font-family: cursive;
-  font-size: x-large;
 }
 
 #create-header {
   font-family: cursive;
+}
+
+#submit-new-user {
+  font-size: smaller;
 }
 
 .add-shoe-form {

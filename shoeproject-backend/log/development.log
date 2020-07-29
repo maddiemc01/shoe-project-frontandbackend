@@ -17150,3 +17150,684 @@ Processing by ShoesController#index as */*
 Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 930)
 
 
+Started DELETE "/users/12" for ::1 at 2020-07-28 16:29:05 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"12", "user"=>{}}
+  [1m[36mUser Load (18.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:20:in `destroy'
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 12]]
+  ↳ app/controllers/users_controller.rb:20:in `destroy'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:20:in `destroy'
+Completed 200 OK in 24ms (Views: 0.1ms | ActiveRecord: 19.2ms | Allocations: 2589)
+
+
+Started DELETE "/users/13" for ::1 at 2020-07-28 16:29:07 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"13", "user"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:20:in `destroy'
+  [1m[36mUser Destroy (2.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 13]]
+  ↳ app/controllers/users_controller.rb:20:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:20:in `destroy'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 2.6ms | Allocations: 2632)
+
+
+  
+ActiveRecord::InvalidForeignKey (PG::ForeignKeyViolation: ERROR:  update or delete on table "users" violates foreign key constraint "fk_rails_14609e14cf" on table "shoes"
+DETAIL:  Key (id)=(13) is still referenced from table "shoes".
+):
+  
+app/controllers/users_controller.rb:20:in `destroy'
+Started DELETE "/users/11" for ::1 at 2020-07-28 16:29:15 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"11", "user"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `destroy'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:20:in `destroy'
+  [1m[36mUser Destroy (0.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 11]]
+  ↳ app/controllers/users_controller.rb:20:in `destroy'
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:20:in `destroy'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.8ms | Allocations: 2631)
+
+
+  
+ActiveRecord::InvalidForeignKey (PG::ForeignKeyViolation: ERROR:  update or delete on table "users" violates foreign key constraint "fk_rails_14609e14cf" on table "shoes"
+DETAIL:  Key (id)=(11) is still referenced from table "shoes".
+):
+  
+app/controllers/users_controller.rb:20:in `destroy'
+Started GET "/users" for ::1 at 2020-07-28 16:31:48 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (5.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 5.7ms | Allocations: 1432)
+
+
+Started GET "/users/1/shoes" for ::1 at 2020-07-28 16:31:48 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mShoe Load (0.5ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 1]]
+Started GET "/users/2/shoes" for ::1 at 2020-07-28 16:31:48 -0400
+Started GET "/users/4/shoes" for ::1 at 2020-07-28 16:31:48 -0400
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Started GET "/users/5/shoes" for ::1 at 2020-07-28 16:31:48 -0400
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 2131)
+
+
+Processing by ShoesController#index as */*
+Started GET "/users/9/shoes" for ::1 at 2020-07-28 16:31:48 -0400
+  Parameters: {"user_id"=>"2"}
+Started GET "/users/11/shoes" for ::1 at 2020-07-28 16:31:48 -0400
+  [1m[36mShoe Load (0.7ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 2]]
+Processing by ShoesController#index as */*
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"4"}
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"5"}
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Processing by ShoesController#index as */*
+  [1m[36mShoe Load (0.6ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+  Parameters: {"user_id"=>"11"}
+  Parameters: {"user_id"=>"9"}
+Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 2957)
+
+
+  [1m[36mShoe Load (0.9ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 11]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+  [1m[36mShoe Load (2.5ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 4]]
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 1905)
+
+
+  [1m[36mShoe Load (1.2ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 9]]
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 1351)
+
+
+Started GET "/users/13/shoes" for ::1 at 2020-07-28 16:31:48 -0400
+Started GET "/users/14/shoes" for ::1 at 2020-07-28 16:31:48 -0400
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 2.5ms | Allocations: 6195)
+
+
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 1.2ms | Allocations: 4226)
+
+
+Processing by ShoesController#index as */*
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"13"}
+  Parameters: {"user_id"=>"14"}
+  [1m[36mShoe Load (0.5ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 13]]
+  [1m[36mShoe Load (0.2ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 14]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 1765)
+
+
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1726)
+
+
+Started GET "/users/6/shoes" for ::1 at 2020-07-28 16:31:49 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"6"}
+  [1m[36mShoe Load (0.3ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 799)
+
+
+Started POST "/users" for ::1 at 2020-07-29 08:20:36 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"another one", "image_url"=>"https://pbs.twimg.com/profile_images/1210618202457292802/lt9KD2lt.jpg", "user"=>{"name"=>"another one", "image_url"=>"https://pbs.twimg.com/profile_images/1210618202457292802/lt9KD2lt.jpg"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:14:in `create'
+  [1m[36mUser Create (1.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "image_url") VALUES ($1, $2) RETURNING "id"[0m  [["name", "another one"], ["image_url", "https://pbs.twimg.com/profile_images/1210618202457292802/lt9KD2lt.jpg"]]
+  ↳ app/controllers/users_controller.rb:14:in `create'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:14:in `create'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 2.9ms | Allocations: 2517)
+
+
+Started GET "/users/15/shoes" for ::1 at 2020-07-29 08:20:36 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"15"}
+  [1m[36mShoe Load (0.5ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 15]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 849)
+
+
+Started POST "/users" for ::1 at 2020-07-29 08:25:53 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"bob", "image_url"=>"https://pbs.twimg.com/profile_images/1210618202457292802/lt9KD2lt.jpg", "user"=>{"name"=>"bob", "image_url"=>"https://pbs.twimg.com/profile_images/1210618202457292802/lt9KD2lt.jpg"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:14:in `create'
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "image_url") VALUES ($1, $2) RETURNING "id"[0m  [["name", "bob"], ["image_url", "https://pbs.twimg.com/profile_images/1210618202457292802/lt9KD2lt.jpg"]]
+  ↳ app/controllers/users_controller.rb:14:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:14:in `create'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.1ms | Allocations: 2494)
+
+
+Started GET "/users/16/shoes" for ::1 at 2020-07-29 08:25:53 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"16"}
+  [1m[36mShoe Load (0.7ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 793)
+
+
+Started POST "/users/16/shoes" for ::1 at 2020-07-29 08:26:10 -0400
+Processing by ShoesController#create as JSON
+  Parameters: {"shoe"=>{"name"=>"patty", "heel_height"=>"2", "size"=>"8.5", "style"=>"platform", "color"=>"#d9f757", "user_id"=>"16"}, "user_id"=>"16"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/shoes_controller.rb:8:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/shoes_controller.rb:8:in `create'
+  [1m[36mShoe Create (0.7ms)[0m  [1m[32mINSERT INTO "shoes" ("style", "color", "user_id", "name", "size", "heel_height") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["style", "platform"], ["color", "#d9f757"], ["user_id", 16], ["name", "patty"], ["size", "8.5"], ["heel_height", "2"]]
+  ↳ app/controllers/shoes_controller.rb:8:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/shoes_controller.rb:8:in `create'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.8ms | Allocations: 3913)
+
+
+Started POST "/users/16/shoes" for ::1 at 2020-07-29 08:26:32 -0400
+Processing by ShoesController#create as JSON
+  Parameters: {"shoe"=>{"name"=>"patty 2", "heel_height"=>"3.5", "size"=>"9", "style"=>"cone", "color"=>"#000000", "user_id"=>"16"}, "user_id"=>"16"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/shoes_controller.rb:8:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/shoes_controller.rb:8:in `create'
+  [1m[36mShoe Create (0.5ms)[0m  [1m[32mINSERT INTO "shoes" ("style", "color", "user_id", "name", "size", "heel_height") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["style", "cone"], ["color", "#000000"], ["user_id", 16], ["name", "patty 2"], ["size", "9"], ["heel_height", "3.5"]]
+  ↳ app/controllers/shoes_controller.rb:8:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/shoes_controller.rb:8:in `create'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.1ms | Allocations: 3910)
+
+
+Started GET "/users" for ::1 at 2020-07-29 08:26:34 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1592)
+
+
+Started GET "/users/1/shoes" for ::1 at 2020-07-29 08:26:34 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mShoe Load (0.8ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 1868)
+
+
+Started GET "/users/5/shoes" for ::1 at 2020-07-29 08:26:34 -0400
+Started GET "/users/4/shoes" for ::1 at 2020-07-29 08:26:34 -0400
+Started GET "/users/9/shoes" for ::1 at 2020-07-29 08:26:34 -0400
+Started GET "/users/16/shoes" for ::1 at 2020-07-29 08:26:34 -0400
+Started GET "/users/2/shoes" for ::1 at 2020-07-29 08:26:34 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"5"}
+  [1m[36mShoe Load (0.5ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 1431)
+
+
+Started GET "/users/11/shoes" for ::1 at 2020-07-29 08:26:34 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"11"}
+  [1m[36mShoe Load (0.7ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 11]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 1341)
+
+
+Started GET "/users/13/shoes" for ::1 at 2020-07-29 08:26:34 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"13"}
+Processing by ShoesController#index as */*
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"4"}
+  Parameters: {"user_id"=>"9"}
+  [1m[36mShoe Load (1.7ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.5ms | ActiveRecord: 1.7ms | Allocations: 3155)
+
+
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"16"}
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"2"}
+  [1m[36mShoe Load (2.2ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 6.7ms | Allocations: 3243)
+
+
+  [1m[36mShoe Load (3.3ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 4]]
+Started GET "/users/14/shoes" for ::1 at 2020-07-29 08:26:34 -0400
+  [1m[36mShoe Load (1.9ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 18ms (Views: 0.1ms | ActiveRecord: 3.7ms | Allocations: 5382)
+
+
+  [1m[36mShoe Load (2.0ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 3.1ms | Allocations: 4328)
+
+
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Started GET "/users/15/shoes" for ::1 at 2020-07-29 08:26:34 -0400
+Completed 200 OK in 19ms (Views: 0.2ms | ActiveRecord: 2.5ms | Allocations: 5608)
+
+
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"14"}
+  [1m[36mShoe Load (0.5ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 14]]
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"15"}
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 1439)
+
+
+  [1m[36mShoe Load (0.7ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 15]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 1091)
+
+
+Started GET "/users/6/shoes" for ::1 at 2020-07-29 08:26:34 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"6"}
+  [1m[36mShoe Load (0.3ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 793)
+
+
+Started POST "/users" for ::1 at 2020-07-29 08:28:21 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"another example", "image_url"=>"https://pbs.twimg.com/profile_images/1210618202457292802/lt9KD2lt.jpg", "user"=>{"name"=>"another example", "image_url"=>"https://pbs.twimg.com/profile_images/1210618202457292802/lt9KD2lt.jpg"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:14:in `create'
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "image_url") VALUES ($1, $2) RETURNING "id"[0m  [["name", "another example"], ["image_url", "https://pbs.twimg.com/profile_images/1210618202457292802/lt9KD2lt.jpg"]]
+  ↳ app/controllers/users_controller.rb:14:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:14:in `create'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 1.2ms | Allocations: 2496)
+
+
+Started GET "/users/17/shoes" for ::1 at 2020-07-29 08:28:21 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"17"}
+  [1m[36mShoe Load (0.3ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 17]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 793)
+
+
+Started POST "/users/17/shoes" for ::1 at 2020-07-29 08:28:31 -0400
+Processing by ShoesController#create as JSON
+  Parameters: {"shoe"=>{"name"=>"ex 1", "heel_height"=>"3", "size"=>"7.5", "style"=>"platform", "color"=>"#000000", "user_id"=>"17"}, "user_id"=>"17"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/shoes_controller.rb:8:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/shoes_controller.rb:8:in `create'
+  [1m[36mShoe Create (0.9ms)[0m  [1m[32mINSERT INTO "shoes" ("style", "color", "user_id", "name", "size", "heel_height") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["style", "platform"], ["color", "#000000"], ["user_id", 17], ["name", "ex 1"], ["size", "7.5"], ["heel_height", "3"]]
+  ↳ app/controllers/shoes_controller.rb:8:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/shoes_controller.rb:8:in `create'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.8ms | Allocations: 3913)
+
+
+Started GET "/users" for ::1 at 2020-07-29 08:31:57 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1671)
+
+
+Started GET "/users/1/shoes" for ::1 at 2020-07-29 08:31:57 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"1"}
+Started GET "/users/2/shoes" for ::1 at 2020-07-29 08:31:57 -0400
+Started GET "/users/6/shoes" for ::1 at 2020-07-29 08:31:57 -0400
+  [1m[36mShoe Load (1.9ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 1.9ms | Allocations: 1586)
+
+
+Started GET "/users/4/shoes" for ::1 at 2020-07-29 08:31:57 -0400
+Started GET "/users/9/shoes" for ::1 at 2020-07-29 08:31:57 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"6"}
+Started GET "/users/11/shoes" for ::1 at 2020-07-29 08:31:57 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"2"}
+  [1m[36mShoe Load (1.2ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 6]]
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"4"}
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+  [1m[36mShoe Load (1.8ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 1.8ms | Allocations: 1909)
+
+
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"9"}
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.2ms | Allocations: 2005)
+
+
+Processing by ShoesController#index as */*
+  [1m[36mShoe Load (3.1ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 4]]
+  Parameters: {"user_id"=>"11"}
+Started GET "/users/13/shoes" for ::1 at 2020-07-29 08:31:57 -0400
+  [1m[36mShoe Load (2.0ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 3.1ms | Allocations: 4887)
+
+
+Started GET "/users/14/shoes" for ::1 at 2020-07-29 08:31:57 -0400
+  [1m[36mShoe Load (0.6ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 11]]
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 2.0ms | Allocations: 2734)
+
+
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"13"}
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 3244)
+
+
+  [1m[36mShoe Load (0.9ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Started GET "/users/16/shoes" for ::1 at 2020-07-29 08:31:57 -0400
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 2199)
+
+
+Processing by ShoesController#index as */*
+Started GET "/users/15/shoes" for ::1 at 2020-07-29 08:31:57 -0400
+  Parameters: {"user_id"=>"14"}
+  [1m[36mShoe Load (0.5ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 14]]
+Processing by ShoesController#index as */*
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"15"}
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 1627)
+
+
+  Parameters: {"user_id"=>"16"}
+  [1m[36mShoe Load (0.7ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 15]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Started GET "/users/17/shoes" for ::1 at 2020-07-29 08:31:57 -0400
+  [1m[36mShoe Load (1.2ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 16]]
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 1413)
+
+
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.2ms | Allocations: 2132)
+
+
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"17"}
+  [1m[36mShoe Load (0.2ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 17]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 930)
+
+
+Started GET "/users/5/shoes" for ::1 at 2020-07-29 08:31:57 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"5"}
+  [1m[36mShoe Load (0.2ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1204)
+
+
+Started DELETE "/users/17" for ::1 at 2020-07-29 08:32:00 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"17", "user"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:20:in `destroy'
+  [1m[36mUser Destroy (1.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 17]]
+  ↳ app/controllers/users_controller.rb:20:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:20:in `destroy'
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 2.3ms | Allocations: 2632)
+
+
+  
+ActiveRecord::InvalidForeignKey (PG::ForeignKeyViolation: ERROR:  update or delete on table "users" violates foreign key constraint "fk_rails_14609e14cf" on table "shoes"
+DETAIL:  Key (id)=(17) is still referenced from table "shoes".
+):
+  
+app/controllers/users_controller.rb:20:in `destroy'
+Started DELETE "/users/16" for ::1 at 2020-07-29 08:32:02 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"16", "user"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:20:in `destroy'
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 16]]
+  ↳ app/controllers/users_controller.rb:20:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:20:in `destroy'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 1.3ms | Allocations: 2631)
+
+
+  
+ActiveRecord::InvalidForeignKey (PG::ForeignKeyViolation: ERROR:  update or delete on table "users" violates foreign key constraint "fk_rails_14609e14cf" on table "shoes"
+DETAIL:  Key (id)=(16) is still referenced from table "shoes".
+):
+  
+app/controllers/users_controller.rb:20:in `destroy'
+Started DELETE "/users/15" for ::1 at 2020-07-29 08:32:03 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"15", "user"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:20:in `destroy'
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 15]]
+  ↳ app/controllers/users_controller.rb:20:in `destroy'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:20:in `destroy'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 1.2ms | Allocations: 2588)
+
+
+Started DELETE "/users/13" for ::1 at 2020-07-29 08:32:05 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"13", "user"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:20:in `destroy'
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 13]]
+  ↳ app/controllers/users_controller.rb:20:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:20:in `destroy'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.4ms | Allocations: 2632)
+
+
+  
+ActiveRecord::InvalidForeignKey (PG::ForeignKeyViolation: ERROR:  update or delete on table "users" violates foreign key constraint "fk_rails_14609e14cf" on table "shoes"
+DETAIL:  Key (id)=(13) is still referenced from table "shoes".
+):
+  
+app/controllers/users_controller.rb:20:in `destroy'
+Started DELETE "/users/11" for ::1 at 2020-07-29 08:32:10 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"11", "user"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:20:in `destroy'
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 11]]
+  ↳ app/controllers/users_controller.rb:20:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:20:in `destroy'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.0ms | Allocations: 2631)
+
+
+  
+ActiveRecord::InvalidForeignKey (PG::ForeignKeyViolation: ERROR:  update or delete on table "users" violates foreign key constraint "fk_rails_14609e14cf" on table "shoes"
+DETAIL:  Key (id)=(11) is still referenced from table "shoes".
+):
+  
+app/controllers/users_controller.rb:20:in `destroy'
+Started DELETE "/users/9/shoes/48" for ::1 at 2020-07-29 08:32:18 -0400
+Processing by ShoesController#destroy as JSON
+  Parameters: {"user_id"=>"9", "id"=>"48", "shoe"=>{}}
+  [1m[36mShoe Load (0.3ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/controllers/shoes_controller.rb:13:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/shoes_controller.rb:14:in `destroy'
+  [1m[36mShoe Destroy (0.2ms)[0m  [1m[31mDELETE FROM "shoes" WHERE "shoes"."id" = $1[0m  [["id", 48]]
+  ↳ app/controllers/shoes_controller.rb:14:in `destroy'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/shoes_controller.rb:14:in `destroy'
+Completed 500 Internal Server Error in 120ms (ActiveRecord: 1.1ms | Allocations: 73426)
+
+
+  
+NameError (undefined local variable or method `user' for #<ShoesController:0x00007fcdb43b7f70>):
+  
+app/controllers/shoes_controller.rb:15:in `destroy'
+Started DELETE "/users/2" for ::1 at 2020-07-29 08:32:25 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"2", "user"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:20:in `destroy'
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/users_controller.rb:20:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:20:in `destroy'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.1ms | Allocations: 2631)
+
+
+  
+ActiveRecord::InvalidForeignKey (PG::ForeignKeyViolation: ERROR:  update or delete on table "users" violates foreign key constraint "fk_rails_14609e14cf" on table "shoes"
+DETAIL:  Key (id)=(2) is still referenced from table "shoes".
+):
+  
+app/controllers/users_controller.rb:20:in `destroy'
+Started DELETE "/users/1" for ::1 at 2020-07-29 08:32:27 -0400
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"1", "user"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:20:in `destroy'
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/users_controller.rb:20:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:20:in `destroy'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.0ms | Allocations: 2631)
+
+
+  
+ActiveRecord::InvalidForeignKey (PG::ForeignKeyViolation: ERROR:  update or delete on table "users" violates foreign key constraint "fk_rails_14609e14cf" on table "shoes"
+DETAIL:  Key (id)=(1) is still referenced from table "shoes".
+):
+  
+app/controllers/users_controller.rb:20:in `destroy'
+Started GET "/users" for ::1 at 2020-07-29 09:42:19 -0400
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 22ms (Views: 0.2ms | ActiveRecord: 9.0ms | Allocations: 5634)
+
+
+Started GET "/users/1/shoes" for ::1 at 2020-07-29 09:42:19 -0400
+Started GET "/users/2/shoes" for ::1 at 2020-07-29 09:42:19 -0400
+Started GET "/users/4/shoes" for ::1 at 2020-07-29 09:42:19 -0400
+Started GET "/users/5/shoes" for ::1 at 2020-07-29 09:42:19 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"1"}
+Started GET "/users/6/shoes" for ::1 at 2020-07-29 09:42:19 -0400
+  [1m[36mShoe Load (2.2ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"2"}
+Completed 200 OK in 62ms (Views: 0.2ms | ActiveRecord: 28.2ms | Allocations: 12422)
+
+
+Started GET "/users/11/shoes" for ::1 at 2020-07-29 09:42:19 -0400
+Processing by ShoesController#index as */*
+  [1m[36mShoe Load (3.3ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+  Parameters: {"user_id"=>"4"}
+Completed 200 OK in 16ms (Views: 0.2ms | ActiveRecord: 5.7ms | Allocations: 4352)
+
+
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"5"}
+Processing by ShoesController#index as */*
+Started GET "/users/13/shoes" for ::1 at 2020-07-29 09:42:20 -0400
+  [1m[36mShoe Load (3.1ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 22ms (Views: 0.1ms | ActiveRecord: 15.3ms | Allocations: 3576)
+
+
+  Parameters: {"user_id"=>"11"}
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"6"}
+  [1m[36mShoe Load (5.1ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 31ms (Views: 0.2ms | ActiveRecord: 14.7ms | Allocations: 5575)
+
+
+Started GET "/users/14/shoes" for ::1 at 2020-07-29 09:42:20 -0400
+  [1m[36mShoe Load (3.7ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 11]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 3.7ms | Allocations: 2808)
+
+
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"13"}
+  [1m[36mShoe Load (6.4ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+  [1m[36mShoe Load (4.0ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 4.0ms | Allocations: 2532)
+
+
+Started GET "/users/16/shoes" for ::1 at 2020-07-29 09:42:20 -0400
+Completed 200 OK in 24ms (Views: 0.1ms | ActiveRecord: 9.8ms | Allocations: 4431)
+
+
+Started GET "/users/17/shoes" for ::1 at 2020-07-29 09:42:20 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"17"}
+Processing by ShoesController#index as */*
+Processing by ShoesController#index as */*
+  [1m[36mShoe Load (1.5ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 17]]
+  Parameters: {"user_id"=>"14"}
+  Parameters: {"user_id"=>"16"}
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+  [1m[36mShoe Load (2.2ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 14]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 11ms (Views: 0.6ms | ActiveRecord: 2.2ms | Allocations: 1276)
+
+
+  [1m[36mShoe Load (3.3ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 16]]
+Completed 200 OK in 10ms (Views: 0.6ms | ActiveRecord: 1.5ms | Allocations: 1559)
+
+
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 18ms (Views: 0.5ms | ActiveRecord: 3.3ms | Allocations: 2387)
+
+
+Started GET "/users/9/shoes" for ::1 at 2020-07-29 09:42:20 -0400
+Processing by ShoesController#index as */*
+  Parameters: {"user_id"=>"9"}
+  [1m[36mShoe Load (0.5ms)[0m  [1m[34mSELECT "shoes".* FROM "shoes" WHERE "shoes"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/controllers/shoes_controller.rb:4:in `index'
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 803)
+
+

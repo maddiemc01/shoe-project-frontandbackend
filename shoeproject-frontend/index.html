@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Shoe Maker</title>
-    <script type="application/javascript" src="./src/index.js" charset="UTF-8"></script>></script>
+    <script type="module" src="./src/branchindex.js" charset="UTF-8"></script>></script>
     <link rel="stylesheet" href="style.css" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   </head>
@@ -58,7 +58,7 @@
 
     <div id="new-or-old-user">
     <p style="text-align:center">
-      <span id="shoe-card?">
+      <span id="shoe-card">
       Before we get started, have you already made a shoe card?
       </span>
       <br>
@@ -71,29 +71,29 @@
       <div class="col-sm-3" id='side-column'>
         <form id="create-shoe-form">
           <h4>Select your shoe size: </h4>
-          <input type="radio" id="size6" name="size" value="6">
+          <input type="radio" id="size6" class="size" name="size" value="6">
           <label for="size6">US 6</label><br>
-          <input type="radio" id="size6.5" name="size" value="6.5">
+          <input type="radio" id="size6.5" class="size" name="size" value="6.5">
           <label for="size6.5">US 6.5</label><br>
 
-          <input type="radio" id="size7" name="size" value="7">
+          <input type="radio" id="size7" class="size" name="size" value="7">
           <label for="size7">US 7</label><br>
-          <input type="radio" id="size7.5" name="size" value="7.5">
+          <input type="radio" id="size7.5" class="size" name="size" value="7.5">
           <label for="size7.5">US 7.5</label><br>
 
-          <input type="radio" id="size8" name="size" value="8">
+          <input type="radio" id="size8" class="size" name="size" value="8">
           <label for="size8">US 8</label><br>
-          <input type="radio" id="size8.5" name="size" value="8.5">
+          <input type="radio" id="size8.5" class="size" name="size" value="8.5">
           <label for="size8.5">US 8.5</label><br>
 
-          <input type="radio" id="size9" name="size" value="9">
+          <input type="radio" id="size9" class="size" name="size" value="9">
           <label for="size9">US 9</label><br>
-          <input type="radio" id="size9.5" name="size" value="9.5">
+          <input type="radio" id="size9.5" class="size" class="size" name="size" value="9.5">
           <label for="size9.5">US 9.5</label><br>
 
-          <input type="radio" id="size10" name="size" value="10">
+          <input type="radio" id="size10" class="size" name="size" value="10">
           <label for="size10">US 10</label><br>
-          <input type="radio" id="size10.5" name="size" value="10.5">
+          <input type="radio" id="size10.5" class="size" name="size" value="10.5">
           <label for="size10.5">US 10.5</label><br>
           </input>
           <br>
@@ -102,7 +102,7 @@
             <option value="stiletto">Stiletto</option>
             <option value="platform">Platform Heel</option>
             <option value="cone">Cone Heel</option>
-            <option value="maryjane">Mary Jane Platforms</option>
+            <option value="maryjane">Mary Jane Platform</option>
             <option value="carspin">Scarpin Heel</option>
           </select>
           <br>
@@ -124,7 +124,8 @@
           <br>
           <label for="color">Select your Shoe color:</label>
           <input type="color" id="color" name="color" value="#ff000">
-
+          <br>
+          <label for="name">Name your shoe:</label>
           <input
           type="text"
           name="name"
@@ -132,6 +133,14 @@
           placeholder="shoe name"
           class="input-text"
           id= "shoename-input"></input>
+
+          <input
+          type = "hidden"
+          name = "user"
+          value = ""
+          id = "shoe-user">
+          </input>
+
           <input
           type="submit"
           name="submit"
@@ -141,6 +150,7 @@
         </form>
       </div>
       <div id="shoe-collection">
+
       </div>
     </div>
   </div>
