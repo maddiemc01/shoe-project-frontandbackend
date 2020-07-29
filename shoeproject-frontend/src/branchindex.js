@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const newUserContainer = document.querySelector("#new-user-form-container")
   newUserBtn.addEventListener("click", () => {
     hide(generalContainer)
+    addUser = !addUser
     toggle(newUserContainer, addUser)
   })
 
@@ -53,10 +54,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const cardContainer = document.querySelector("#shoe-collection")
   cardContainer.innerHTML = ""
   previousUserBtn.addEventListener("click", () => {
-    addUser = !addUser
-    hide(newUserContainer)
     showCards = !showCards
     if (showCards) {
+      addUser = !addUser
+      hide(newUserContainer)
       show(generalContainer)
       cardContainer.innerHTML = ""
       cardContainer.classList = "col-sm-12"

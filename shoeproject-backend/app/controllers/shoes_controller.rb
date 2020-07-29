@@ -16,6 +16,7 @@ class ShoesController < ApplicationController
   end
 
 private
+
   def shoe_params
     params.require(:shoe).permit(:size, :style, :heel_height, :color, :name, :user_id)
   end
